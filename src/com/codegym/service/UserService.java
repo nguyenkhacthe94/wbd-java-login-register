@@ -55,7 +55,7 @@ public class UserService {
 
             PreparedStatement pstmt = null;
 
-            pstmt = con.prepareStatement("insert into users(firstname,lastname,username,password) values(?,?,?,md5(?))");
+                    pstmt = con.prepareStatement("insert into users(firstname,lastname,username,password) values(?,?,?,md5(?))");
             pstmt.setString(1, firstname);
             pstmt.setString(2, lastname);
             pstmt.setString(3, username);
